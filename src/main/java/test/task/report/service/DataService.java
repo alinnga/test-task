@@ -9,15 +9,12 @@ import test.task.report.repository.TagDataRepository;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
 public class DataService {
     @Autowired
     TagDataRepository repo;
-
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public List<TagData> getDataByReportIdAndDate(FormData formData) {
         String dateStartStr = formData.getDateStart();

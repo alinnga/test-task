@@ -1,11 +1,6 @@
 <html>
     <head>
         <title>Start page</title>
-        <style>
-            table, th, td {
-              border:1px solid black;
-            }
-        </style>
     </head>
     <body>
     <form action="/report" method="get" enctype="multipart/form-data">
